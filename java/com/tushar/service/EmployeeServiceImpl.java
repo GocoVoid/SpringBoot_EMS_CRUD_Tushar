@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.tushar.dao.EmployeeDAO;
 import com.tushar.entity.EmployeeEntity;
-import com.tushar.exception.InvalidEmployeeIdException; // Import your new exception
+import com.tushar.exception.InvalidEmployeeIdException;
 import com.tushar.model.EmployeeModel;
 import com.tushar.rest.api.EmployeeAPI;
 
@@ -183,4 +183,5 @@ public class EmployeeServiceImpl implements EmployeeService {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to delete employee due to a server error");
         }
     }
+
 }
